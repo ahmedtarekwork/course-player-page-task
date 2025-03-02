@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CDN for Font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS styles -->
+    <link href="./src/style.css" rel="stylesheet" />
+
+    <title>Course Player Page</title>
+  </head>
+
+  <body>
+    <div id="modal">
+      <button id="close-modal-btn">X</button>
+      <div id="modal-content-holder"></div>
+    </div>
+
+    <div id="top-section">
+      <ul id="bread-crumbs">
+        <li>Home</li>
+        <li>Course</li>
+        <li>Course Details</li>
+      </ul>
+
+      <h1>Starting SEO as Your Home Based Business</h1>
+    </div>
+
+    <div class="video-player wide-screen">
+      <video src="./videos/video_1.mp4" muted></video>
+
+      <div class="video-player-btns-holder">
+        <button class="paly-pause-video-btn" data-show-icon="play">
+          <i class="fa-solid fa-play play-icon"></i>
+          <i class="fa-solid fa-pause pause-icon"></i>
+        </button>
+
+        <div class="video-player-down-btns-holder">
+          <button class="wide-screen-btn">
+            <img
+              src="./icons/aspect-ratio-icon.png"
+              alt="aspect ratio icon"
+              width="22"
+              height="22"
+            />
+          </button>
+
+          <button class="full-screen-btn" data-show-icon="fullscreen">
+            <img
+              class="fullscreen-icon"
+              src="./icons/full-screen-icon.png"
+              width="22"
+              height="22"
+              alt="full screen icon"
+            />
+            <img
+              class="exit-fullscreen-icon"
+              src="./icons/exit-full-screen-icon.png"
+              width="22"
+              height="22"
+              alt="exit full screen icon"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div id="left-side">
+        <div class="video-player">
+          <video src="./videos/video_1.mp4" muted></video>
+
+          <div class="video-player-btns-holder">
+            <button class="paly-pause-video-btn" data-show-icon="play">
+              <i class="fa-solid fa-play play-icon"></i>
+              <i class="fa-solid fa-pause pause-icon"></i>
+            </button>
+
+            <div class="video-player-down-btns-holder">
+              <button class="wide-screen-btn">
+                <img
+                  src="./icons/aspect-ratio-icon.png"
+                  alt="aspect ratio icon"
+                  width="22"
+                  height="22"
+                />
+              </button>
+
+              <button class="full-screen-btn" data-show-icon="fullscreen">
+                <img
+                  class="fullscreen-icon"
+                  src="./icons/full-screen-icon.png"
+                  width="22"
+                  height="22"
+                  alt="full screen icon"
+                />
+                <img
+                  class="exit-fullscreen-icon"
+                  src="./icons/exit-full-screen-icon.png"
+                  width="22"
+                  height="22"
+                  alt="exit full screen icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <ul id="social-links-list">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+
+        <!-- mobile only -->
+        <ul id="mobile-btns-list">
+          <li>
+            <a href="#course-chapters-and-percent"
+              ><i class="fa-regular fa-file-lines"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#comments-section"><i class="fa-solid fa-comment"></i></a>
+          </li>
+          <li>
+            <button data-open-modal="ask-question-open-model-btn">
+              <i class="fa-solid fa-question"></i>
+            </button>
+          </li>
+          <li>
+            <button data-open-modal="leader-boared-open-model-btn">
+              <i class="fa-solid fa-chess-board"></i>
+            </button>
+          </li>
+        </ul>
+
+        <div id="course-materials">
+          <h2 class="section-title">Course Materials</h2>
+
+          <div>
+            <ul>
+              <li id="instructor-cell">
+                <p>
+                  <img
+                    src="./icons/person-with-laptop-icon.png"
+                    alt="person with laptop icon"
+                    width="24"
+                    height="24"
+                  />
+                  Instructor:
+                </p>
+                <p>Edward Norton</p>
+              </li>
+
+              <li>
+                <p><i class="fa-regular fa-clock"></i> Duration:</p>
+                <p>3 weeks</p>
+              </li>
+              <li>
+                <p>
+                  <img
+                    width="24"
+                    height="24"
+                    src="./icons/books-icon.png"
+                    alt="books icon"
+                  />
+                  Lessons:
+                </p>
+                <p>8</p>
+              </li>
+              <li>
+                <p>
+                  <img
+                    width="24"
+                    height="24"
+                    src="./icons/reading-icon.png"
+                    alt="student icon"
+                  />
+                  Enrolled:
+                </p>
+                <p>65 students</p>
+              </li>
+              <li>
+                <p>
+                  <img
+                    width="24"
+                    height="24"
+                    src="./icons/www-icon.png"
+                    alt="www icon"
+                  />
+                  Language:
+                </p>
+                <p>English</p>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <p><i class="fa-regular fa-clock"></i> Duration:</p>
+                <p>3 weeks</p>
+              </li>
+              <li>
+                <p>
+                  <img
+                    width="24"
+                    height="24"
+                    src="./icons/books-icon.png"
+                    alt="books icon"
+                  />
+                  Lessons:
+                </p>
+                <p>8</p>
+              </li>
+              <li>
+                <p>
+                  <img
+                    width="24"
+                    height="24"
+                    src="./icons/reading-icon.png"
+                    alt="student icon"
+                  />
+                  Enrolled:
+                </p>
+                <p>65 students</p>
+              </li>
+              <li>
+                <p>
+                  <img
+                    width="24"
+                    height="24"
+                    src="./icons/www-icon.png"
+                    alt="www icon"
+                  />
+                  Language:
+                </p>
+                <p>English</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- mobile only -->
+        <div id="course-chapters-and-percent">
+          <h2 class="section-title">Topics for This Course</h2>
+
+          <div class="finish-percent">
+            <div>
+              <span id="percent">0%</span>
+              <span>You</span>
+            </div>
+          </div>
+
+          <div class="weeks-section accordion">
+            <button>
+              <h3>Course Introduction <span>+</span></h3>
+            </button>
+
+            <ul class="week-lessons-list">
+              <li>
+                <p><i class="fa-regular fa-file-lines"></i> Introduction</p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li>
+                <p><i class="fa-regular fa-file-lines"></i> Course Overview</p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li
+                class="lesson-item-detailed"
+                data-open-modal="lesson-item-detailed"
+              >
+                <p><i class="fa-regular fa-file-lines"></i> Course Overview</p>
+                <div>
+                  <div class="green">0 QUESTION</div>
+                  <div class="red">10 MINUTES</div>
+                </div>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Course Exercise /
+                  Reference Files
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Code Editor
+                  Installation (Optional if you have one)
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li data-open-modal="exam">
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Embedding PHP in HTML
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div class="weeks-section accordion">
+            <button>
+              <h3>Javascript Language Basics <span>+</span></h3>
+            </button>
+
+            <ul class="week-lessons-list">
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Defining Functions
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Function Parameters
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li
+                class="lesson-item-detailed"
+                data-open-modal="lesson-item-detailed"
+              >
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Return Values From
+                  Funtions
+                </p>
+                <div>
+                  <div class="green">2 QUESTION</div>
+                  <div class="red">15 MINUTES</div>
+                </div>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Global Variables and
+                  Scope
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Newer Way of creating
+                  a Constant
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li>
+                <p><i class="fa-regular fa-file-lines"></i> Constants</p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <div class="weeks-section accordion">
+            <button>
+              <h3>Components & Databinding <span>+</span></h3>
+            </button>
+
+            <ul class="week-lessons-list">
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Defining Functions
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Function Parameters
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li
+                class="lesson-item-detailed"
+                data-open-modal="lesson-item-detailed"
+              >
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Return Values From
+                  Funtions
+                </p>
+                <div>
+                  <div class="green">2 QUESTION</div>
+                  <div class="red">15 MINUTES</div>
+                </div>
+              </li>
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Global Variables and
+                  Scope
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li>
+                <p>
+                  <i class="fa-regular fa-file-lines"></i> Newer Way of creating
+                  a Constant
+                </p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+              <li>
+                <p><i class="fa-regular fa-file-lines"></i> Constants</p>
+                <img
+                  width="24"
+                  height="24"
+                  src="./icons/lock-icon.png"
+                  alt="look icon"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="comments-section">
+          <h2 class="section-title">Comments</h2>
+
+          <ul>
+            <li>
+              <img
+                width="100"
+                height="100"
+                src="./imgs/person_1.PNG"
+                alt="person 1"
+              />
+              <div>
+                <p>Student Name Goes Here</p>
+                <p>oct 10, 2021</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  deleniti possimus sint eveniet, rem hic est architecto.
+                  Voluptatibus, aliquam nostrum.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img
+                width="100"
+                height="100"
+                src="./imgs/person_1.PNG"
+                alt="person 2"
+              />
+              <div>
+                <p>Student Name Goes Here</p>
+                <p>oct 10, 2021</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  deleniti possimus sint eveniet, rem hic est architecto.
+                  Voluptatibus, aliquam nostrum.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img
+                width="100"
+                height="100"
+                src="./imgs/person_2.PNG"
+                alt="person 3"
+              />
+              <div>
+                <p>Student Name Goes Here</p>
+                <p>oct 10, 2021</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+                  deleniti possimus sint eveniet, rem hic est architecto.
+                  Voluptatibus, aliquam nostrum.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form id="add-comment-form">
+          <textarea
+            name="comment"
+            id="comment-textarea"
+            placeholder="Write a comment"
+          ></textarea>
+          <button>Submit Review <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+
+      <div id="right-side">
+        <h2 class="section-title">Topics for This Course</h2>
+
+        <div class="finish-percent">
+          <div>
+            <span id="percent">0%</span>
+            <span>You</span>
+          </div>
+        </div>
+
+        <div class="weeks-section">
+          <h3>Week 1-4</h3>
+          <p>
+            Advanced story telling techniques for writers: <br />
+            Personas, Characters & Plots
+          </p>
+
+          <ul class="week-lessons-list">
+            <li>
+              <p><i class="fa-regular fa-file-lines"></i> Introduction</p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li>
+              <p><i class="fa-regular fa-file-lines"></i> Course Overview</p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li
+              class="lesson-item-detailed"
+              data-open-modal="lesson-item-detailed"
+            >
+              <p><i class="fa-regular fa-file-lines"></i> Course Overview</p>
+              <div>
+                <div class="green">0 QUESTION</div>
+                <div class="red">10 MINUTES</div>
+              </div>
+            </li>
+            <li>
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Course Exercise /
+                Reference Files
+              </p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li>
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Code Editor
+                Installation (Optional if you have one)
+              </p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li data-open-modal="exam">
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Embedding PHP in HTML
+              </p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="weeks-section">
+          <h3>Week 5-8</h3>
+          <p>
+            Advanced story telling techniques for writers: <br />
+            Personas, Characters & Plots
+          </p>
+
+          <ul class="week-lessons-list">
+            <li>
+              <p><i class="fa-regular fa-file-lines"></i> Defining Functions</p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li>
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Function Parameters
+              </p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li
+              class="lesson-item-detailed"
+              data-open-modal="lesson-item-detailed"
+            >
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Return Values From
+                Funtions
+              </p>
+              <div>
+                <div class="green">2 QUESTION</div>
+                <div class="red">15 MINUTES</div>
+              </div>
+            </li>
+            <li>
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Global Variables and
+                Scope
+              </p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li>
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Newer Way of creating a
+                Constant
+              </p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li>
+              <p><i class="fa-regular fa-file-lines"></i> Constants</p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="weeks-section">
+          <h3>Week 5-8</h3>
+          <p>
+            Advanced story telling techniques for writers: <br />
+            Personas, Characters & Plots
+          </p>
+
+          <ul class="week-lessons-list">
+            <li>
+              <p><i class="fa-regular fa-file-lines"></i> Defining Functions</p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li>
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Function Parameters
+              </p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li
+              class="lesson-item-detailed"
+              data-open-modal="lesson-item-detailed"
+            >
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Return Values From
+                Funtions
+              </p>
+              <div>
+                <div class="green">2 QUESTION</div>
+                <div class="red">15 MINUTES</div>
+              </div>
+            </li>
+            <li>
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Global Variables and
+                Scope
+              </p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li>
+              <p>
+                <i class="fa-regular fa-file-lines"></i> Newer Way of creating a
+                Constant
+              </p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+            <li>
+              <p><i class="fa-regular fa-file-lines"></i> Constants</p>
+              <img src="./icons/lock-icon.png" alt="look icon" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
